@@ -24,8 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+</style>
+
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#282C33] text-white`}
       >
         {children}
       </body>
