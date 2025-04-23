@@ -4,7 +4,7 @@ import { IProject } from '@/lib/projects'
 import Link from 'next/link'
 export default function HomeProjectCard({project}:{project:IProject}) {
     return (
-        <div className=' border-[1px] border-[#ABB2BF] max-w-[30%]'>
+        <div className=' border-[1px] border-[#ABB2BF] max-w-[30%] h-fit'>
             <Image src={project.image} alt='image here' width={430} height={280} />
             <div className='fira-code-light px-4 border-t-[1px] border-b-[1px] border-[#ABB2BF] py-2'>
                 {project.skills.join(" ")}
